@@ -28,7 +28,9 @@ app.get('/validation/91768CDC3F00444F8AC0AA834EAF4E20', function (req, res) {
     res.render('91768CDC3F00444F8AC0AA834EAF4E20')
 });
 
-
+app.get('/', function (req, res) {
+    res.json({"message":"Hello Worlds"})
+});
 
 app.listen(PORT, function(err){
     if (err) console.log(err);
