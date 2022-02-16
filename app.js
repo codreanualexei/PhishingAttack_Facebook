@@ -33,9 +33,6 @@ app.use("/", express.static(path.join(__dirname, 'views/fb-login-clone')));
 //set view engine
 app.set('view engine','ejs')
 
-//Make public static folders
-app.use('/validation', express.static('validation')) //for images
-
 app.all('*',function (req, res, next) {
 
     console.log("request made: ", req.headers['x-forwarded-for']?.split(',').shift()
