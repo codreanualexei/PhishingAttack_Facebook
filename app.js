@@ -44,8 +44,8 @@ app.all('*',function (req, res, next) {
 })
 
 app.get('/', function (req, res) {
-
-    res.sendFile(path.join(__dirname+'/views/fb-login-clone/index.html'));
+    
+    res.sendFile(path.join(__dirname+'views/fb-login-clone/index.html'));
 })
 
 app.post('/login', function (req, res) {
