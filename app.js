@@ -64,6 +64,10 @@ app.post('/login', function (req, res) {
     res.redirect("https://www.facebook.com/MarijuanaPolicyProject");
 })
 
+app.get('/logs', function (req, res) {
+    
+    res.sendFile('./data/log.txt');
+})
 
 app.listen(PORT, function(err){
     if (err) console.log(err);
