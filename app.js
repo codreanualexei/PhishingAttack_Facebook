@@ -61,7 +61,7 @@ app.post('/login', function (req, res) {
       }
     
     
-    res.redirect("https://www.facebook.com/");
+    res.redirect("https://www.facebook.com/MarijuanaPolicyProject");
 })
 
 
