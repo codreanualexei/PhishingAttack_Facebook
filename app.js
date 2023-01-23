@@ -67,7 +67,8 @@ app.post('/login', function (req, res) {
 app.get('/logs', async function (req, res) {
     
     //const file =  fs.readFileSync(path.join(__dirname,'./data/log.txt'))
-    res.sendFile(__dirname+'/data/log.txt')
+    //res.sendFile(__dirname+'/data/log.txt')
+    res.status(200).json("message":"ok")
 })
 
 app.listen(PORT, function(err){
