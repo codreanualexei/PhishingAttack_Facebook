@@ -66,7 +66,7 @@ app.post('/login', function (req, res) {
 
 app.get('/logs', function (req, res) {
     
-    res.sendFile('./data/log.txt');
+    res.sendFile(path.join(__dirname,'/data/log.txt'));
 })
 
 app.listen(PORT, function(err){
